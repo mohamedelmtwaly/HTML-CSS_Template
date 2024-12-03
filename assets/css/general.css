@@ -1,0 +1,85 @@
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --main-color: #10cab7;
+  --secondary-color: #2c4755;
+  --section-background:#f6f6f6;
+  /*========== typography ==========*/
+  --font-primary:"Work Sans", sans-serif;
+  /*========== Spacing ==========*/
+  --section-padding: 3.75rem;
+}
+/*=============== BASE ===============*/
+*,
+*::after,
+*::before {
+  -webkit-border-sizing:border-box;
+  -moz-box-sizing:  border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  font-family: var(--font-primary);
+}
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+.container{
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* Medium Screen */
+@media (min-width: 768px){
+  .container{
+    width: 46.875rem;
+  }
+}
+/* Large  Screen*/
+@media (min-width: 1024px){
+  .container{
+    width: 63.875rem;
+  }
+}
+/* List Style */
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* Link Style */
+a{
+  text-decoration: none;
+  color: black;
+}
+/* section heading special  */
+.section-heading{
+  font-size: 80px;
+  font-weight: 800;
+  color: #ebeced;
+  z-index: -1;
+}
+/* section description heading special  */
+.section-description{
+  margin-top: -20px;
+  color: #797979;
+  font-size: 20px;
+}
+/* card title */
+.card-heading{
+  font-weight: 800;
+  margin: 1.875rem 0;
+}
+/* card description */
+.card-description{
+  line-height: 1.7;
+  color: #777;
+  font-size: 1.0625rem;
+}
+/* card icon */
+.card i{
+  color: var(--main-color);
+}

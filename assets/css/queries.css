@@ -1,0 +1,128 @@
+@import url("style.css");
+@import url("general.css");
+/* mdeiam 768>=:1536 */
+@media (min-width: 768px) {
+  /*section-features */
+  .section-features .container-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section-features .card-item {
+    width: 50%;
+    padding: 20px;
+  }
+  /* section-services */
+  .container-serv {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .col {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+  .card {
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+  }
+  .card .card-heading {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .card i {
+    margin-right: 20px;
+  }
+  /* section-portfolio */
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .col-project {
+    width: 50%;
+    padding: 15px;
+  }
+}
+/* large 1024>=:1536 */
+@media (min-width: 1024px) {
+  /* Features SECTION */
+  .section-features .card-item {
+    width: calc(100% / 3);
+    padding: 20px;
+  }
+  /* section-services */
+  .container-serv .col:last-child {
+    display: block;
+  }
+  .card-img {
+    position: relative;
+    width: 250px;
+  }
+  .card-img img {
+    width: 100%;
+  }
+  .card-img::before {
+    content: "";
+    background-color: var(--secondary-color);
+    width: 100px;
+    height: calc(100% + 40px);
+    position: absolute;
+    top: -40px;
+    right: 0;
+    z-index: -1;
+    transform: translateX(50%);
+  }
+  /* portfolio-services */
+  .col-project {
+    width: calc(100% / 3);
+    padding: 15px;
+  }
+  /* section-portfolio */
+  .about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .text {
+    width: 50%;
+  }
+  .about-content hr {
+    margin-right: auto;
+  }
+  .about-image {
+    position: relative;
+  }
+  .about-image::before {
+    content: "";
+    height: calc(100% + 100px);
+    width: 100px;
+    background-color: #ddd;
+    position: absolute;
+    top: -50px;
+    left: -20px;
+    z-index: -1;
+  }
+  .about-image::after {
+    content: "";
+    position: absolute;
+    width: 190px;
+    height: 380px;
+    border-left: 80px solid var(--main-color);
+    border-bottom: 80px solid var(--main-color);
+    right: -140px;
+    top: -50px;
+    z-index: -1;
+  }
+  /* section-contact */
+  .contact-content > p,
+  .contact-content a {
+    font-size: 35px;
+  }
+
+}
+/* xlarge 1280>=:1536 */
+@media (min-width: 1280px) {
+}
+@media (min-width: 1536px) {
+}
